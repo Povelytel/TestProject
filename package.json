@@ -1,0 +1,22 @@
+{
+  "name": "forTest",
+  "version": "1.0.0",
+  "description": "NodeJs server for forTest",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "start:dev": "pm2 start ecosystem.config.js --env dev",
+    "start:prod": "pm2 start ecosystem.config.js --env prod",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sasha Makaruk",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "canvas": "^2.8.0",
+    "express": "^4.17.1",
+    "ncrypt-js": "^2.0.0",
+    "nodemon": "^2.0.7",
+    "telegraf": "^4.4.2"
+  }
+}
