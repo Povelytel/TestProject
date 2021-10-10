@@ -88,7 +88,7 @@ class chatBot {
                 if (fs.existsSync(fname)) {
                     fs.unlinkSync(fname);
                 }
-                for(let i = el.message_id + 100; i >= el.message_id; i--){
+                for(let i = el.message_id + 10; i >= el.message_id; i--){
                     bot.telegram.deleteMessage(el.chat_id,i);
                 }
             });
