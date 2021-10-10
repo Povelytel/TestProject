@@ -11,12 +11,14 @@ let fname = "./cfg.json",
 
 //telegram bot check
 bot.check();
+setInterval(()=>{bot.checkChats()},bot.getCheckChatTime()*1000);
 
 /* api for test
 const express = require("express"),
     bodyParser = require("body-parser"),
     main = require('./app/routes/main'),
     app = express();
+
 
 const host = process.env.HOST || "127.0.0.1",
     port = process.env.PORT || "3030";
